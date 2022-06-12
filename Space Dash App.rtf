@@ -1,0 +1,1088 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clmrg \clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 import dash\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 import dash_html_components as html\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 import dash_core_components as dcc\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 from dash.dependencies import Input, Output\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 import pandas as pd\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 import plotly.express as px\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 spacex_df = pd.read_csv("spacex_launch_dash.csv")\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 max_payload = spacex_df['Payload Mass (kg)'].max()\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 min_payload = spacex_df['Payload Mass (kg)'].min()\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 unique_launch_sites = spacex_df['Launch Site'].unique().tolist()\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 launch_sites = []\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 launch_sites.append(\{'label': 'All Sites', 'value': 'All Sites'\})\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 for launch_site in unique_launch_sites:\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     launch_sites.append(\{'label': launch_site, 'value': launch_site\})\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 app.layout = html.Div(children=[\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     html.Div([\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         html.H1('SpaceX Launch Records Dashboard',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             style=\{'textAlign': 'center', 'color': '#503D36','font-size': 40\}),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     ]),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     html.Div([\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         # TASK 1: Add a Launch Site Drop-down Input Component\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         dcc.Dropdown(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 id = 'site-dropdown',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 options = launch_sites,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 placeholder = 'Select a Launch Site here',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 searchable = True ,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 clearable = False,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 value = 'All Sites'\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             ),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         # TASK 2: Add a callback function to render success-pie-chart based on selected site dropdown\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         html.Div(dcc.Graph(id='success-pie-chart')),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     ], style=\{'padding': '0 30px'\}),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     html.Div([\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         # TASK 3: Add a Range Slider to Select Payload\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         html.Div("Payload range (Kg):", \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             style=\{'color': '#503D36','font-size': 20, 'padding': '0 30px', 'margin-left': '11px'\}\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             ),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         html.Div([\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             dcc.RangeSlider(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 id = 'payload_slider',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 min = 0,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 max = 10000,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 step = 1000,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 marks = \{\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         0: \{'label': '0 Kg', 'style': \{'color': '#77b0b1'\}\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         1000: \{'label': '1000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         2000: \{'label': '2000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         3000: \{'label': '3000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         4000: \{'label': '4000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         5000: \{'label': '5000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         6000: \{'label': '6000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         7000: \{'label': '7000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         8000: \{'label': '8000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         9000: \{'label': '9000 Kg'\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                         10000: \{'label': '10000 Kg', 'style': \{'color': '#f50'\}\},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 \},\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 value = [min_payload,max_payload]\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             ),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         ], style=\{'padding': '40px 30px'\}),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         # TASK 4: Add a callback function to render the success-payload-scatter-chart scatter plot\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         html.Div(dcc.Graph(id = 'success-payload-scatter-chart')),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     ]),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 ],style=\{'padding': '0 20px'\})\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 # TASK 2: success-pie-chart callback based on selected site dropdown\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 @app.callback(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0      Output(component_id = 'success-pie-chart', component_property = 'figure'),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0      [Input(component_id = 'site-dropdown', component_property = 'value')]\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 )\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 def update_piegraph(site_dropdown):\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     if (site_dropdown == 'All Sites' or site_dropdown == 'None'):\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         all_sites  = spacex_df[spacex_df['class'] == 1] # All Success only for all sites.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         fig = px.pie(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 all_sites,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 names = 'Launch Site',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 title = 'Total Success Launches by All Sites',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 hole = .2,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 color_discrete_sequence = px.colors.sequential.RdBu\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             )\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     else:\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         site_specific  = spacex_df.loc[spacex_df['Launch Site'] == site_dropdown]\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         fig = px.pie(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 site_specific,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 names = 'class',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 title = 'Total Success Launches for Site &#8608; '+site_dropdown,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 hole = .2\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             )\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     return fig\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 # TASK 3, 4: Range Slider or Scatter Chart Callback\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 @app.callback(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0      Output(component_id = 'success-payload-scatter-chart', component_property = 'figure'),\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0      [Input(component_id = 'site-dropdown', component_property = 'value'), \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0      Input(component_id = "payload_slider", component_property = "value")]\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 )\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 def update_scattergraph(site_dropdown,payload_slider):\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     if (site_dropdown == 'All Sites' or site_dropdown == 'None'):\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         low, high = payload_slider\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         all_sites  = spacex_df\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         inrange = (all_sites['Payload Mass (kg)'] > low) & (all_sites['Payload Mass (kg)'] < high)\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         fig = px.scatter(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 all_sites[inrange], \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 x = "Payload Mass (kg)", \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 y = "class",\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 title = 'Correlation Between Payload and Success for All Sites',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 color="Booster Version Category",\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 size='Payload Mass (kg)',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 hover_data=['Payload Mass (kg)']\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             )\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     else:\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         low, high = payload_slider\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         site_specific  = spacex_df.loc[spacex_df['Launch Site'] == site_dropdown]\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         inrange = (site_specific['Payload Mass (kg)'] > low) & (site_specific['Payload Mass (kg)'] < high)\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0         fig = px.scatter(\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 site_specific[inrange],\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 x = "Payload Mass (kg)",\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 y = "class",\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 title = 'Correlation Between Payload and Success for Site &#8608; '+site_dropdown,\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 color="Booster Version Category",\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 size='Payload Mass (kg)',\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                 hover_data=['Payload Mass (kg)']\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             )\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     return fig\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 if __name__ == '__main__':\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth2032\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth16126\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0     app.run_server(debug=True)\cell \lastrow\row
+}
